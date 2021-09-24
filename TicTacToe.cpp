@@ -44,6 +44,22 @@ void DisplayBoard(std::vector<std::vector<int> > board) {
 }
 
 /**
+ * Receives player input and returns a vector with row and column of chosen cell.
+ * @returns Vector with row and column of chosen cell
+ */
+std::vector<int> GetPlayerChoice() {
+    int i,j;
+    std::cout << "Please input value for row (0-2): ";
+    std::cin >> i;
+    std::cout << "Please input value for col (0-2): ";
+    std::cin >> j;
+    std::vector<int> vec;
+    vec.push_back(i);
+    vec.push_back(j);
+    return vec;
+}
+
+/**
  * Places marker in given location on board.
  * @param board Board
  * @param pos Integer vector containing row and column of cell to be updated

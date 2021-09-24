@@ -15,7 +15,7 @@ std::vector<std::vector<int> > CreateBoard() {
     return outer;
 }
 
-void DisplayBoard(std::vector<std::vector<int>> vec) {
+void DisplayBoard(std::vector<std::vector<int> > vec) {
     for (int i = 0; i < 3; i++) {
         for (int j = 0; i < 3; i++) {
             if (vec[i][j] == 0) {
@@ -29,7 +29,20 @@ void DisplayBoard(std::vector<std::vector<int>> vec) {
     }
 }
 
+std::vector<int> GetPlayerChoice() {
+    int i,j;
+    std::cout << "Please input value for row (0-2): ";
+    std::cin >> i;
+    std::cout << "Please input value for col (0-2): ";
+    std::cin >> j;
+    std::vector<int> vec;
+    vec.push_back(i);
+    vec.push_back(j);
+    return vec;
+}
+
 int main() { 
     std::vector<std::vector<int> > board = CreateBoard(); 
-    DisplayBoard(board);
+    std::vector<int> pos = GetPlayerChoice();
+
 }

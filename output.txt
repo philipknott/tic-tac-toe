@@ -1,0 +1,66 @@
+(base) ➜  tic-tac-toe git:(main) ✗ g++ TicTacToe.cpp 
+(base) ➜  tic-tac-toe git:(main) ✗ ./a.out 
+
+. . . 
+. . . 
+. . . 
+Player X
+Please input value for row (0-2): 0
+Please input value for col (0-2): 0
+
+X . . 
+. . . 
+. . . 
+Player O
+Please input value for row (0-2): 0
+Please input value for col (0-2): 1
+
+X O . 
+. . . 
+. . . 
+Player O
+Please input value for row (0-2): 1
+Please input value for col (0-2): 1
+
+X O . 
+. X . 
+. . . 
+Player O
+Please input value for row (0-2): 1
+Please input value for col (0-2): 0
+
+X O . 
+O X . 
+. . . 
+Player O
+Please input value for row (0-2): 0
+Please input value for col (0-2): 2
+
+X O X 
+O X . 
+. . . 
+Player O
+Please input value for row (0-2): 1
+Please input value for col (0-2): 2
+
+X O X 
+O X O 
+. . . 
+Player O
+Please input value for row (0-2): 2
+Please input value for col (0-2): 2
+
+X O X 
+O X O 
+. . X 
+Player O
+Please input value for row (0-2): 2
+Please input value for col (0-2): 1
+
+X O X 
+O X O 
+. O X 
+Player O
+Please input value for row (0-2): 2
+Please input value for col (0-2): 0
+(base) ➜  tic-tac-toe git:(main) ✗ 

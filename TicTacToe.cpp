@@ -15,17 +15,23 @@ std::vector<std::vector<int> > CreateBoard() {
     return outer;
 }
 
-void DisplayBoard(std::vector<std::vector<int>> vec) {
+void DisplayBoard(std::vector<std::vector<int> > board) {
     for (int i = 0; i < 3; i++) {
-        for (int j = 0; i < 3; i++) {
-            if (vec[i][j] == 0) {
-                std::cout << " ";
-            } else if (vec[i][j] == 1) {
-                std::cout << "X";
-            } else {
-                std::cout << "O";
+        for (int j = 0; j < 3; j++) {
+            char c;
+            switch (board[i][j]) {
+                case -1:
+                    c = '.';
+                    break;
+                case 0:
+                    c = 'X';
+                    break;
+                case 1:
+                    c = 'O';
             }
+            std::cout << c << ' ';
         }
+        std::cout << std::endl;
     }
 }
 

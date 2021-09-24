@@ -1,6 +1,10 @@
 #include <iostream>
 #include <vector>
 
+/**
+ * Creates an empty board, with values initialized to -1;
+ * @returns 2D vector of integers
+ */
 std::vector<std::vector<int> > CreateBoard() {
     std::vector<int> inner;
     for (int i = 0; i < 3; i++) {
@@ -15,6 +19,10 @@ std::vector<std::vector<int> > CreateBoard() {
     return outer;
 }
 
+/**
+ * Prints board contents.
+ * @param board Board
+ */
 void DisplayBoard(std::vector<std::vector<int> > board) {
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
@@ -35,7 +43,17 @@ void DisplayBoard(std::vector<std::vector<int> > board) {
     }
 }
 
-int main() { 
-    std::vector<std::vector<int> > board = CreateBoard(); 
+/**
+ * Places marker in given location on board.
+ * @param board Board
+ * @param pos Integer vector containing row and column of cell to be updated
+ * @param num 0 for X, 1 for Y
+ */
+void PlaceMarker(std::vector<std::vector<int> > &board, std::vector<int> pos, int num) {
+    board[pos[0]][pos[1]] = num;
+}
+
+int main() {
+    std::vector<std::vector<int> > board = CreateBoard();
     DisplayBoard(board);
 }

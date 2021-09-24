@@ -4,6 +4,10 @@
 #include <iostream>
 #include <vector>
 
+/**
+ * Creates an empty board, with values initialized to -1;
+ * @returns 2D vector of integers
+ */
 std::vector<std::vector<int> > CreateBoard() {
     std::vector<int> inner;
     for (int i = 0; i < 3; i++) {
